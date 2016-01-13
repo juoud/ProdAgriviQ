@@ -1,1 +1,1 @@
-Voir SRS
+Voir le document de vision et SRS
