@@ -1,0 +1,6 @@
+11. Standards Applicables 
+-	Le processus de conception et de développement la plate forme ProdAgriviQ doit respecter le standard ISO / IEC / IEEE 16326 : 2009 [6].
+-	Le HTML (Hypertext Markup Language) permettant d’écrire le contenu des pages web sera utilisé pour produire le code des pages web [7].  
+-	Le CSS (Cascading Style Sheets) ou feuilles de style en cascade sera utilisé pour la mise en forme des pages web [8]. 
+-	Le format CSV (Comma-separated values), qui permet de présenter des données tabulaires sous formes de valeur séparé par des virgules sera utilisé dans le téléchargement des données [9].   
+-	Le format PDF (Portable Document Format), permettra de  préserver la mise en forme d’une page web téléchargeable au moment du téléchargement [10]. 
