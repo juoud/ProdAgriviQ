@@ -1,0 +1,20 @@
+6. Contraintes de conception
+•	PAQ-CC-001 : L’ensemble des activités d’analyse, de conception et d’implémentation ainsi que celles de tests doit être fait en utilisant l’approche itérative et incrémentale c’est-à-dire le Processus unifié afin de bien contenir tout risque pouvant nuire au  projet.
+
+•	PAQ-CC-002 : Le développement de l’application doit respecter les normes du patron de conception Modèle – Vue – Contrôleur (MVC).
+
+•	PAQ-CC-003 : Toutes les interfaces de ProdAgriviQ doivent être réalisées avec les balises et commandes de HTML 5 et JSP 1.2 (voir aussi PAQ-CC-004).
+
+•	PAQ-CC-004 : Les interfaces graphiques de ProdAgriviQ doivent prendre en compte les exigences et limitations des écrans de différents dispositifs clients notamment les téléphones intelligents et les tablettes.
+
+•	PAQ-CC-005 : L’Environnement de  développement open source, Eclipse,  ainsi que les normes et technologies de développement web avec java/jee 7 d’Oracle doivent être utilisées pour la réalisation de ProdAgriviQ.
+
+•	PAQ-CC-006 : Le modèle de données doit être flexible afin de faciliter son implémentation en utilisant à la fois les gestionnaires de base de données propriétaire (Microsoft SQL Server Express) et open source (PostgreSQL).
+
+•	PAQ-CC-007 : Aux phases de conception, de développement et de tests, le gestionnaire de base de données propriétaire Microsoft SQL Server Express doit être utilisé pour le stockage et la  gestion des données ainsi que le requêtage. 
+
+•	PAQ-CC-008 : Le gestionnaire de base de données open source, PostgreSQL doit être utilisé en production.
+
+•	PAQ-CC-009 : Le protocole http sera utilisé pour toute communication entre l’utilisateur et l’application Web ProdAgriviQ.
+
+•	PAQ-CC-010 : Aucune communication directe permise entre ProdAgriviQ et toute autre application.
