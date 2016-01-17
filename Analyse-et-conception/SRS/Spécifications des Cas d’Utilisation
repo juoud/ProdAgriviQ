@@ -1,0 +1,773 @@
+Annexe A: Spécifications des Cas d’Utilisation 
+PAQ-UC01 : GÉRER LES VARIÉTÉS DE PA
+
+BRÈVE DESCRIPTION
+Le Fermier désire créer, modifier ou supprimer un PA ou une variété de PA. Il veut aussi consulter ou imprimer le catalogue de ses variétés de PA.  
+
+C’est un ensemble de plusieurs cas d’utilisation qui sont détaillés dans la suite du document.
+
+PAQ-UC01-01 : Ajouter une variété de PA
+ACTEUR PRINCIPAL
+Fermier
+
+PRÉCONDITIONS
+•	Le Fermier est connecté
+
+POST-CONDITIONS
+•	Une variété de PA a été enregistrée 
+
+SCÉNARIO PRINCIPAL
+1. Le Fermier saisit le nom et une brève description de la variété de PA. La description peut porter sur l’historique de la variété de PA, son origine et bien d’autre information nécessaire :
+
+          
+MAQ-UC01 : Maquette d’écran pour la création d’une variété de PA
+2. L’application demande de confirmer les informations saisies.
+
+3. Le Fermier valide les données.
+
+4. L’application enregistre les informations. Elle affiche un récapitulatif des données ainsi que le numéro attribué à la nouvelle variété de PA
+
+SCÉNARIOS ALTERNATIFS : 
+1.a Omission ou erreur de saisie du nom de la variété de PA :
+1. L’application demande au Fermier de renseigner, compléter ou modifier le nom de la variété de PA.
+
+2. Retour à l’étape 1 du scénario principal
+
+1.b Annulation de l’opération du flux de base Créer une variété de PA :
+1. Le Fermier annule l’opération de création.
+
+2. L’application vide le contenu des zones de saisie et se positionne à l’étape de création.
+
+3. L’application se termine en échec.
+
+PAQ-UC01-02 : Modifier une variété de PA
+ACTEUR PRINCIPAL
+Fermier
+
+PRÉCONDITIONS
+•	Les variétés de PA sont disponibles
+
+POST-CONDITIONS
+•	Une variété de PA a été modifiée 
+
+SCÉNARIO PRINCIPAL
+1. Le fermier sélectionne « Modification » dans la liste des types d’opérations disponible.
+
+2. L’Application revoie les références et le nom des variétés de PA du Fermier dans des zones de liste déroulant dédiées.
+
+3. Le Fermier sélectionne la variété de PA qu’il souhaite modifier; en déroulant soit la zone de liste des références ou soit celle de noms des variétés. Il peut aussi procéder directement en cliquant dans la liste des variétés de PA.
+
+4. L’application affiche l’ensemble des informations de la variété de PA sélectionnée.
+5. Le Fermier met à jour les informations de la variété de PA.
+6. L’application lui demande de confirmer son action.
+7. Le Fermier confirme son action. 
+8. L’application procède à la modification des données de la variété de PA. Elle informe le Fermier du succès de l’opération.
+
+SCÉNARIOS ALTERNATIFS : 
+1.a Omission ou erreur de saisie du nom de la variété de PA :
+1. L’application demande au Fermier de renseigner, compléter ou modifier  le nom de la variété.
+
+2. Retour à l’étape 1 du scénario principal
+
+1.b Annulation de l’opération :
+1. Le Fermier annule l’opération de modification.
+
+2. L’application vide le contenu des zones de saisie et se positionne à l’étape de création.
+
+3. L’application se termine en échec.
+
+PAQ-UC01-03 : Supprimer une variété de PA
+ACTEUR PRINCIPAL
+Fermier
+
+PRÉCONDITIONS
+•	La variété de PA n’est pas associée à des PA.
+
+POST-CONDITIONS
+•	Liste des variétés de PA réduite. 
+
+SCÉNARIO PRINCIPAL
+1. Le fermier sélectionne « Suppression » dans la liste des types d’opérations disponible.
+
+2. L’Application revoie les références et le nom des variétés de PA du Fermier dans des zones de liste déroulant dédiées.
+
+3. Le Fermier sélectionne la variété de PA qu’il souhaite enlever, en déroulant soit la zone de liste des références ou soit celle de noms des variétés. Il peut aussi procéder directement en cliquant dans la liste des variétés de PA.
+
+4. L’application affiche l’ensemble des informations de la variété de PA sélectionnée.
+5. Le Fermier enlève la variété de PA de son catalogue.
+6. L’application lui demande de confirmer son action.
+7. Le Fermier confirme l’enlèvement de la variété de PA. 
+8. L’application enlève la variété de PA. Elle informe le Fermier du succès de l’opération.
+
+
+PAQ-UC01-04 : Créer un PA
+ACTEUR PRINCIPAL
+Fermier
+
+PRÉCONDITIONS
+•	Les variétés (ou famille) de PA sont disponibles
+
+POST-CONDITIONS
+•	Un PA a été enregistré 
+•	Une nouvelle instance du catalogue de PA du fermier est disponible
+
+SCÉNARIO PRINCIPAL
+1. Le Fermier saisit l’ensemble des informations caractérisant un PA :
+-	Nom courant, local et scientifique (si possible)
+-	Variété
+-	Description
+-	Image principale
+-	Vidéo
+
+2. L’application demande de confirmer les informations saisies
+3. Le Fermier valide sa saisie
+
+4. L’application enregistre les informations. Elle affiche un récapitulatif des données ainsi que le numéro attribué au nouveau PA
+
+ 
+MAQ-UC01-04 : Maquette d’écran pour la création d’un PA 
+SCÉNARIOS ALTERNATIFS 
+1.a Omission ou erreur de saisie d’une information obligatoire :
+1. L’application demande au Fermier de renseigner, compléter ou modifier  une  information obligatoire
+
+2. Retour à l’étape 1 du flux de base
+
+1.b Annulation de l’opération du flux de base Créer une variété de PA :
+1. Le Fermier annule l’opération de création
+
+2. L’application vide le contenu des zones de saisie et se positionne à l’étape de création
+
+3. L’application se termine en échec
+
+2.a Le fermier perd la connexion Internet (ou encore la batterie de dispositif mobile  à plat ou tout autre incident)  lors de la validation :
+1. L’application enregistre les données dans un état « non validé »
+
+2. À la prochaine connexion du Fermier, l’application reprend l’étape 2 du flux de base
+
+
+PAQ-UC01-05 : Modifier un PA
+ACTEUR PRINCIPAL
+Fermier
+
+PRÉCONDITIONS
+•	Le catalogue des PA est disponible
+
+POST-CONDITIONS
+•	Un PA a été modifié 
+•	Une nouvelle instance du catalogue de PA du fermier est disponible
+
+SCÉNARIO PRINCIPAL
+1. Le fermier sélectionne « Modification » dans la liste des types d’opérations disponible.
+
+2. L’Application revoie les références, les noms courants et les noms scientifiques des PA du Fermier dans des zones de liste déroulant dédiées.
+
+3. Le Fermier sélectionne le PA qu’il souhaite modifier dans le catalogue en déroulant soit la zone de liste des références, soit celle de noms courants ou encore celle des noms scientifiques de PA:
+
+
+   
+MAQ-UC01-05 : Maquette d’écran pour la modification d’un PA
+
+4. L’application affiche l’ensemble des informations du PA sélectionné.
+5. Le Fermier met à jour les informations du PA
+6. L’application lui demande de confirmer son action
+7. Le Fermier valide son action
+8. L’application procède à la modification des données du PA. Elle informe le Fermier du succès de l’opération
+
+SCÉNARIOS ALTERNATIFS : 
+1.a Omission ou erreur de saisie d’une information obligatoire :
+1. L’application demande au Fermier de renseigner, compléter ou modifier  une  information obligatoire
+
+2. Retour à l’étape 1 du flux de base
+
+1.b Annulation de l’opération :
+1. Le Fermier annule l’opération de modification.
+
+2. L’application vide le contenu des zones de saisie et se positionne à l’étape de création.
+
+3. L’application se termine en échec.
+
+ 
+PAQ-UC01-06 : Consulter PA
+ACTEUR PRINCIPAL
+Fermier
+
+PRÉCONDITIONS
+•	Le catalogue des PA est disponible
+
+POST-CONDITIONS
+•	Aucune
+
+SCÉNARIO PRINCIPAL
+1. L’application affiche les images de tous les PA du catalogue du fermier :
+
+   
+MAQ-UC01-06-A : Maquette d’écran pour la consultation de la liste des PA d’un Fermier
+
+2. Pour voir la description d’un PA, le Fermier peut sélectionner directement l’image de ce PA par une clique ou encore effectuer une recherche simple :
+
+ 
+MAQ-UC01-06-B : Maquette d’écran pour la consultation de la description d’un PA 
+4. Le fermier choisit de quitter.
+5. L’application se termine. 
+
+SCÉNARIOS ALTERNATIFS
+Aucun.
+
+PAQ- UC02 : GÉRER LES RÉCOLTES DE PA
+BRÈVE DESCRIPTION
+Le Fermier désire Ajouter, modifier, enlever ou consulter les récoltes de ses différentes variétés de PA pour une période. Les données de récolte comprennent entre autre la quantité récoltée, la date de récolte, l’unité de mesure de chaque PA et une description que le fermier peut apporter sur la récolte.  
+
+Tout comme « Gérer les variétés de PA », le cas d’utilisation en cours est un ensemble de plusieurs cas d’utilisation qui sont détaillés dans la suite du document.
+
+PAQ-UC02-01 : Ajouter les récoltes de PA d’une période
+ACTEUR PRINCIPAL
+Fermier
+
+PRÉCONDITIONS
+•	Le Fermier est connecté à l’application ProdAgriviQ.
+•	Le catalogue de PA du fermier est disponible.
+
+POST-CONDITIONS
+•	Les récoltes de PA d’une période est disponible.
+SCÉNARIO PRINCIPAL
+1. Le Fermier entre la période ou la saison concernée par les récoltes
+2. L’application affiche le catalogue de PA du Fermier dans un tableau. La référence et le nom de chaque PA sont affichés en lecture seule sur une ligne et sont suivies de :
+-	unités de mesure de PA contenues dans une zone de liste déroulable
+-	la quantité récoltée, positionnée à « 0 » par défaut
+-	la date de la récolte, par défaut, c’est la date du jour
+-	La description de la parcelle d’où est récolté le PA
+
+ 
+MAQ-UC02-01 : Maquette d’écran de création des récoltes de PA d’une saison 
+
+3. Dans chaque ligne du tableau, le Fermier renseigne les données de la récolte. Et par la suite, il valide l’ensemble.
+4. L’application enregistre les informations. Elle affiche un récapitulatif de l’opération notamment le nombre de récoltes créés ou mis à jour. Dans le cas de la création, les numéros attribués aux nouvelles lignes de récoltes sont aussi retournés.
+
+SCÉNARIOS ALTERNATIFS 
+1.a Le catalogue de variétés de PA du Fermier est vide :
+1. L’application affiche un message d’erreur au Fermier (« Catalogue de PA vide ») et lui propose le cas d’utilisation « Gérer les variétés de PA »
+
+1.b Le Fermier demande à ajouter d’autre PA à son catalogue :
+1. L’application propose le cas d’utilisation « Gérer les variétés de PA » au Fermier
+
+PAQ-UC02-02 : Modifier les  récoltes de PA d’une période
+ACTEUR PRINCIPAL
+Fermier
+
+PRÉCONDITIONS
+•	Le Fermier est connecté à l’application ProdAgriviQ.
+•	Le catalogue de PA du fermier est disponible.
+
+POST-CONDITIONS
+•	Les récoltes de PA d’une période est disponible.
+
+SCÉNARIO PRINCIPAL
+1. Le Fermier entre la période ou la saison concernée par les récoltes
+2. L’application affiche le catalogue de PA du Fermier dans un tableau. La référence et le nom de chaque PA sont affichés en lecture seule sur une ligne et sont suivies de :
+-	unités de mesure de PA contenues dans une zone de liste déroulable
+-	la quantité récoltée, positionnée à « 0 » par défaut
+-	la date de la récolte, par défaut, c’est la date du jour
+-	La description de la parcelle d’où est récolté le PA
+3. Dans chaque ligne du tableau, le Fermier renseigne les données de la récolte. Et par la suite, il valide l’ensemble.
+4. L’application enregistre les informations. Elle affiche un récapitulatif de l’opération notamment le nombre de récoltes créés ou mis à jour. Dans le cas de la création, les numéros attribués aux nouvelles lignes de récoltes sont aussi retournés.
+
+SCÉNARIOS ALTERNATIFS 
+1.a Le catalogue de variétés de PA du Fermier est vide :
+1. L’application affiche un message d’erreur au Fermier (« Catalogue de PA vide ») et lui propose le cas d’utilisation « Gérer les variétés de PA ».
+
+1.b Le Fermier demande à ajouter d’autre PA à son catalogue :
+1. L’application propose le cas d’utilisation « Gérer les variétés de PA » au Fermier.
+
+PAQ-UC02-03 : Enlever une récolte de PA d’une période
+ACTEUR PRINCIPAL
+Fermier
+
+PRÉCONDITIONS
+•	Le Fermier est connecté à l’application ProdAgriviQ.
+•	Le catalogue de PA du fermier est disponible.
+
+POST-CONDITIONS
+•	Les récoltes de PA d’une période est disponible.
+
+SCÉNARIO PRINCIPAL
+1. Le Fermier entre la période ou la saison concernée par les récoltes
+2. L’application affiche le catalogue de PA du Fermier dans un tableau. La référence et le nom de chaque PA sont affichés en lecture seule sur une ligne et sont suivies de :
+-	unités de mesure de PA contenues dans une zone de liste déroulable
+-	la quantité récoltée, positionnée à « 0 » par défaut
+-	la date de la récolte, par défaut, c’est la date du jour
+-	La description de la parcelle d’où est récolté le PA
+3. Dans chaque ligne du tableau, le Fermier renseigne les données de la récolte. Et par la suite, il valide l’ensemble
+4. L’application enregistre les informations. Elle affiche un récapitulatif de l’opération notamment le nombre de récoltes créés ou mis à jour. Dans le cas de la création, les numéros attribués aux nouvelles lignes de récoltes sont aussi retournés.
+
+SCÉNARIOS ALTERNATIFS 
+1.a Le catalogue de variétés de PA du Fermier est vide :
+1. L’application affiche un message d’erreur au Fermier (« Catalogue de PA vide ») et lui propose le cas d’utilisation « Créer un PA »
+
+1.b Le Fermier demande à ajouter d’autre PA à son catalogue :
+1. L’application propose le cas d’utilisation « Créer un PA » au Fermier
+
+PAQ-UC02-04 : Consulter les récoltes de PA d’une période
+ACTEUR PRINCIPAL
+Fermier
+
+PRÉCONDITIONS
+•	Les récoltes de PA du fermier est disponible.
+
+POST-CONDITIONS
+•	Aucun.
+
+SCÉNARIO PRINCIPAL
+1. ProdAgriviQ affiche les récoltes de toutes les saisons.
+2. Le Fermier entre une période ou une saison. 
+3. L’application affiche toutes les lignes de récolte de PA de la période indiquée. 
+    Chaque ligne comprend :
+- La référence de la récolte de la saison, 
+- le numéro de la ligne de récolte, 
+- la référence et les noms courant, scientifique et local du PA associés à la ligne
+- la  variété du PA
+- la quantité récoltée sont affichés en lecture seule sur une ligne et sont suivies de :
+
+SCÉNARIOS ALTERNATIFS 
+1.a Aucune récolte de PA n’est collectionnée :
+1. L’application affiche une liste vide et renvoie un message d’erreur au Fermier (« Aucune récolte répertoriée. ») puis lui propose le cas d’utilisation « Créer un PA ».
+
+1.b Le Fermier demande à ajouter d’autre PA à son catalogue :
+1. L’application propose le cas d’utilisation « Gérer les variétés de PA » au Fermier.
+
+PAQ- UC03 : PUBLIER LES PA
+BRÈVE DESCRIPTION
+Le Fermier désire rendre ses PA et ses récoltes nouvellement créés (ou mis à jour) publiques et accessibles aux Internautes durant leur recherche. L’état des PA ou récolte change par la suite. 
+
+PRÉCONDITIONS
+•	Les PA  nouvellement créés ou modifiés existent.
+•	Les récoltes de PA nouvellement créées ou modifiées existent.
+
+POST-CONDITIONS
+•	Les PA et récoltes de PA sont accessibles à travers le Web.
+
+ACTEUR PRINCIPAL
+Fermier
+
+SCÉNARIO PRINCIPAL
+1. ProdAgriviQ renvoie la liste de noms courants et de références des PA susceptibles d’être publiés ainsi que leurs quantités récoltées (si possible) pour la dernière saison. 
+
+2. Le Fermier sélectionne les PA et les récoltes à publier
+
+3. L’application enregistre le changement porter à l’état des PA et récoltes sélectionnés. Elle informe le Fermier que dorénavant, ces PA et récoltes figureront dans le résultat de recherche des Internautes
+
+SCÉNARIO ALTERNATIF
+1.a Le catalogue de variétés de PA du Fermier est vide :
+1. L’application informe le Fermier qu’il ne dispose pas de PA susceptibles d’être publiés et se termine en échec.
+
+PAQ- UC04 : LOCALISER UN FERMIER
+BRÈVE DESCRIPTION
+L’Internaute souhaite contacter ou se rendre chez un Fermier soit à la suite d’une recherche de PA. 
+ACTEUR PRINCIPAL
+Internaute
+
+PRÉCONDITIONS
+•	Le Fermier doit exister dans l’application.
+
+POST-CONDITIONS
+•	Les informations sur le contact et l’emplacement du Fermier sont fournies.
+•	Les traces de l’opération sont sauvegardées.
+
+SCÉNARIOS PRINCIPAL
+
+Gérer les récoltes de PA
+1. L’Internaute saisit le nom du Fermier ou le sélectionne à partir du résultat d’une recherche de PA
+2. L’application Affiche les informations personnelles publiques du Fermier ainsi que sa zone géographique notamment sa région et sa municipalité
+
+FLUX ALTERNATIFS : 
+1.a Le Fermier n’a pas rendu publique ses données personnelles :
+1. L’application affiche un message d’erreur à l’Internaute, « Aucune information publique du Fermier n’est disponible »
+
+2. L’application se termine en échec.
+
+PAQ- UC05 : AJOUTER DES DONNÉES AUDIOVISUELLES AUX PA
+ACTEUR PRINCIPAL
+Fermier.
+
+PRÉCONDITIONS
+•	Le catalogue de PA du fermier est disponible.
+•	Le PA a moins de 10 données audiovisuelles.
+
+POST-CONDITIONS
+•	Nouvelle instance du catalogue de PA.
+
+SCÉNARIO PRINCIPAL
+1. ProdAgriviQ affiche 3 listes distinctes, à savoir :
+ - Liste des PA n’ayant aucune donnée audiovisuelle;
+ - Liste des PA ayant uniquement les images principales, ajoutées lors de leur 
+   création;
+-  Liste des PA ayant au moins 2 données audiovisuelles.
+
+Chaque liste comprend au moins la référence et le nom courant du PA ainsi que sa 
+date de création.
+
+2. le Fermier sélectionne le PA dans une des 3 listes ou bien il saisit directement la  référence du PA. 
+Pour chaque image ou vidéo qu’il souhaite ajouter, le fermier peut prendre directement la photo ou la vidéo avec son appareil ou bien accéder à l’emplacement où est stockée le fichier de l’image/vidéo sur son dispositif matériel. Par la suite il peut donner un nom ainsi qu’une petite description à l’image ou la vidéo. 
+3. L’application enregistre les données audiovisuelles ajoutées au PA. Elle affiche par la suite les numéros attribués à ces données.
+
+SCÉNARIOS ALTERNATIFS 
+1.a Le catalogue est vide :
+1. L’application affiche des listes vides et renvoie un message d’erreur au Fermier (« Catalogue de PA vide. ») puis lui propose le cas d’utilisation « Créer un PA ».
+
+2.b Le Fermier sélectionne un PA ou saisit la référence s’un PA ayant déjà 10  images et vidéos :
+1. L’application désactive les toutes les commandes (boutons) d’importation des données ou de prise d’image/vidéo puis affiche un message d’erreur au fermier, « Chaque PA doit avoir un maximum de 10 images et vidéos. »
+
+2. L’application affiche toutes les images et vidéos du PA qu’elle détenait et propose au Fermier de supprimer certaines de ces données audiovisuelles.
+
+3. L’application se termine en échec.
+
+
+PAQ- UC06 : PROPOSER LA DESCRIPTION D’UN PA
+ACTEUR PRINCIPAL
+Partenaire.
+
+PRÉCONDITIONS
+•	Le catalogue de PA du fermier est disponible.
+
+POST-CONDITIONS
+•	Nouvelle instance du catalogue de PA.
+
+SCÉNARIO PRINCIPAL
+1. Le Partenaire sélectionne la variété ou encore saisit la référence ou le nom courant du 
+    PA. 
+2. Suivant le choix du Partenaire, ProdAgriviQ affiche soit :
+    - l’ensemble des informations (noms, description, etc.) du PA ou bien 
+    - la liste de tous les PA (référence, nom courant et Fermier) associés à la variété. 
+   Dans la seconde option, le Partenaire doit indiquer le PA concerné par l’action. 
+3. Le Partenaire ajoute l’objet ou raison de sa proposition ainsi que le contenu même de 
+   la proposition. 
+
+4. L’application enregistre la proposition. Elle affiche un récapitulatif de l’opération 
+   notamment le numéro attribué à la proposition.
+
+SCÉNARIOS ALTERNATIFS 
+3.a Le Partenaire oublie de fournir le contenu de la description :
+1. L’application demande au Fermier de renseigner le contenu de la description.
+
+2. Retour à l’étape 3 du scénario principal
+
+PAQ- UC07 : S’INSCRIRE
+Niveau	
+But de l'utilisateur 
+
+Acteurs principaux 
+Visiteur
+
+Pré-conditions
+Le visiteur est sur la page d’accueil de « ProdAgriviQ ».
+
+Post-conditions
+Les informations nécessaires à la connexion du visiteur sont enregistrées. 
+
+Scénario principal
+1.	Le visiteur clique sur le lien s’inscrire ;
+2.	Le système affiche la page de saisie des renseignements sur le visiteur ;
+3.	Le visiteur saisi les informations nécessaires à l’inscription notamment :
+-	Prénom  
+-	Nom 
+-	Votre adresse courriel 
+-	Confirmer votre adresse courriel 
+a.	Occupations ;
+b.	Chiffre affiché dans le captchat  
+et valide ; 
+4.	Le système vérifie que tous les champs obligatoires sont remplis et que les informations sont le format adéquat et vérifie que les conditions d’utilisation ont été lue et acceptées par le visiteur ;
+5.	le système enregistre les informations sur le visiteur ;
+6.	le système envoie au visiteur un courriel de confirmation contenant le mot de passe initial ;
+7.	le système affiche la page d’accueil de « ProdAgriviQ ».
+
+Scénarios alternatifs
+3. a Le visiteur désire être membre et sélectionne l’option correspondante ;
+1.	Le système active les champs de saisies complémentaires du profil de membre ;
+2.	Le visiteur saisi les informations complémentaire du profil de membre notamment :
+-	Adresse
+-	Ville
+-	Province
+-	Pays 
+-	Titre (Fermier/ partenaire) 
+-	Téléphone
+et valide ; 
+3.	Retour à l’étape 4
+3. b Le visiteur annule la saisie des informations demandées ;
+4.	le système ignore la saisie et affiche la page d’accueil de « ProdAgriviQ ».
+4. a Le visiteur n’a pas rempli tous les champs obligatoires ;
+1.	le système affiche le message «Champ obligatoire non rempli » et affiche en couleur « Rouge » les champs non saisis.
+2.	Retour à l’étape 3
+4. b Le visiteur saisi des informations dans un mauvais format ;
+1.	le système affiche le message «Informations saisie incorrect » et affiche en couleur « Rouge » les champs concernés.
+2.	Retour à l’étape 3
+5. a Le visiteur refuse les conditions d’utilisation ;
+1.	le système ignore la saisie et affiche la page d’accueil de « ProdAgriviQ ».
+ 
+Maquette d’écran de « S’inscrire »
+PAQ- UC08 : SE CONNECTER
+Niveau	
+But de l'utilisateur 
+
+Acteurs principaux 
+Membre
+
+Pré-conditions
+Être inscrit sur le site  « ProdAgriviQ ».
+Le membre est sur la page de connexion du site « ProdAgriviQ ».
+
+Post-conditions
+Le système ouvre une session au membre connecté.
+
+Scénario principal
+1.	Le membre saisi le nom utilisateur (adresse courriel) et le mot de passe et valide ;
+2.	Le système vérifie la validité du nom utilisateur et du mot de passe ;
+3.	Le système autorise le membre au accéder aux fonctionnalités du système correspondant à son statut. 
+4.	le système affiche la page d’accueil du personnel du membre. 
+ 
+Scénarios alternatifs
+1.	a. Le membre effectue sa première connexion
+1.	Le système affiche la fenêtre de changement de mot de passe ;
+2.	Le membre saisi l’ancien mot de passe puis saisi le nouveau mot de passe et le confirme;
+3.	Le membre valide les informations de changement de mot de passe ;
+4.	Le système vérifie la conformité des informations saisies
+a.	  si les informations sont non conformes
+i.	le système affiche le message d’erreur relatif à la non-conformité
+ii.	Le système retourne à l’étape 1.a. 1. 
+5.	Le système enregistre les informations sur le nouveau mot de passe du membre.
+6.	Retour à l’étape 1
+
+PAQ- UC09 : GÉRER SON PROFILE
+
+PAQ-UC09-01 : Apporter une modification sur son profile
+Niveau	
+But de l'utilisateur 
+
+Acteurs principaux 
+Membre
+
+Pré-conditions
+Être inscrit sur le site  « ProdAgriviQ ».
+Le membre est connecté au site « ProdAgriviQ ».
+
+Post-conditions
+Informations relatives au profil du membre mis à jour;
+
+Scénario principal
+1.	Le membre clique sur le lien géré mon profil ;
+2.	Le membre modifie les informations sur son profil notamment :
+-	Votre adresse courriel 
+-	Confirmer votre adresse courriel 
+a.	Occupations ;
+-	Adresse
+-	Ville
+-	Province
+-	Pays 
+-	Titre (Fermier/ partenaire) 
+-	Téléphone
+3.	Le membre valide les modifications apportées à son profil ;
+4.	Le système vérifie que tous les champs obligatoires sont remplis et que les informations sont le format adéquat ;
+5.	le système le système met à jour le profil du membre ;
+6.	le système retourne à  la page d’accueil du personnel du membre. 
+
+Scénarios alternatifs
+4. a Le membre n’a pas rempli tous les champs obligatoires ;
+3.	le système affiche le message «Champ obligatoire non rempli » et affiche en couleur « Rouge » les champs non saisis.
+4.	Retour à l’étape 2
+4. b Le membre saisi des informations dans un mauvais format ;
+3.	le système affiche le message «Informations saisie incorrect » et affiche en couleur « Rouge » les champs concernés.
+4.	Retour à l’étape 2
+
+PAQ-UC09-02 : Supprimer son profile
+
+PAQ-UC09-03 : Consulter son profile
+
+PAQ- UC10 : VALIDER LA FICHE TECHNIQUE D’UN PA
+Niveau	
+But de l'utilisateur 
+
+Acteurs principaux 
+Partenaire
+
+Pré-conditions
+Être inscrit sur le site  « ProdAgriviQ ».
+Le Partenaire est connecté au site « ProdAgriviQ ».
+
+Post-conditions
+Fiche technique du PA validé et archivé;
+Historique de validation de la Fiche technique mis à jour. 
+
+Scénario principal
+1.	Le Partenaire clique sur le lien valider une fiche technique ;
+2.	Le système affiche la liste des produits agricoles dont les fiches techniques ne sont pas validées;
+3.	Le Partenaire sélectionne le produit agricole;
+4.	Le système affiche le fiche technique du produit agricole sélectionné. 
+5.	 Le Partenaire contrôle et modifie si nécessaire les attributs de la fiche technique du produit agricole notamment :
+-	Nom courant, 
+-	Nom local 
+-	Nom scientifique 
+-	Nom de la Variété
+-	Description 
+-	Image principale
+6.	Le Partenaire valide la fiche
+7.	Le système demande la confirmation de la validation;
+8.	le Partenaire confirme la validation ;
+9.	le système enregistre la validation de la fiche technique et met à jour l’historique de validation de la fiche technique. 
+10.	le système retourne à  la page d’accueil du personnel du Partenaire. 
+
+Scénarios alternatifs
+8. a Le Partenaire annule la validation de la fiche technique du produit agricole ;
+5.	le système ignore les modifications apportées à la fiche.
+6.	le système retourne à  la page d’accueil du personnel du Partenaire. 
+
+PAQ- UC11 : RECHERCHER DES PA
+Niveau	
+But de l'utilisateur 
+
+Acteurs principaux 
+Internaute
+
+Pré-conditions
+L’opérateur est sur la page d’accueil de « ProdAgriviQ » ou sur la page d’accueil  personnel du membre.
+
+Post-conditions
+Aucune
+
+Scénario principal
+1.	L’internaute clique sur le lien recherche de produits agricoles ; 
+2.	Le système affiche la page de recherche de produits agricoles;
+3.	L’internaute saisi dans le champ de recherche le nom du produit agricole recherché et clique sur recherché;
+4.	Le système recherche dans la base de données « ProdAgriviQ »  les informations correspondant au nom du produit agricole demandé ; 
+5.	Le système affiche les informations sur le produit agricole recherché (nom courant, nom local, nom scientifique, ses images principales, liste des zones de production, liste des variétés)
+
+Scénarios alternatifs
+4. a Le système ne trouve aucune variété de produit agricole correspondant au nom saisi ;
+1.	Le système affiche le message « Aucune variété de produit agricole ne correspond au critère saisi.
+2.	Retour à l’étape 2. 
+
+
+ 
+Maquette d’écran de « Rechercher »
+
+
+PAQ- UC12 : ÉDITER DES REPORTING
+Niveau	
+But de l'utilisateur 
+
+Acteurs principaux 
+Membre
+
+Pré-conditions
+Être inscrit sur le site  « ProdAgriviQ ».
+Le Partenaire est connecté au site « ProdAgriviQ ».
+
+Post-conditions
+Aucune
+
+Scénario principal
+1.	Le membre clique sur le lien Editer des reporting; 
+2.	Le système affiche la page d’édition des reporting;
+3.	Le membre sélectionne le type de statistique, la période concerné, le produit agricole et/ou les variétés de PA;
+4.	Le membre clique sur le lien lancer l’édition ; 
+5.	Le système recherche les informations sollicitées et affiches les statistiques correspondantes (Nom PA ; Variété; Saison ; Quantité récoltée ; Fermier ; Région.). 
+
+Scénarios alternatifs
+5. a Le système ne trouve aucune information  correspondant aux statistiques demandées ;
+3.	Le système affiche le message « Aucune information trouvée pour les statistiques demandées ».
+4.	Retour à l’étape 2. 
+
+Fréquence d'utilisation
+Fréquemment
+
+PAQ- UC13 : EFFECTUER UN TÉLÉCHARGEMENT
+Niveau	
+But de l'utilisateur 
+
+Acteurs principaux 
+Membre
+
+Pré-conditions
+Être inscrit sur le site  « ProdAgriviQ ».
+Le Partenaire est connecté au site « ProdAgriviQ ».
+
+Post-conditions
+Aucune
+
+Scénario principal
+1.	Le membre clique sur le lien télécharger des données; 
+2.	Le système affiche la page de téléchargement des données;
+3.	Le membre sélectionne le format, la période et l’ensemble des les champs à télécharger parmi les attributs Nom PA, Nom courant, Nom local, Nom scientifique, Variété, Saison, Quantité récoltée, Fermier, Région.
+4.	Le membre clique sur le lien télécharger ; 
+5.	Le système affiche la fenêtre de saisi de la raison du téléchargement
+6.	Le membre saisi et valide la raison du téléchargement 
+7.	Le système recherche les informations sollicitées 
+8.	Le système met à jour l’historique du téléchargement (date, type de donnée, date de début, date de fin)  et affiches la fenêtre de téléchargement du fichier.  
+9.	Le membre sélectionne soit l’option de téléchargement (« Ouvrir avec » ou « Enregistrer le fichier »)
+10.	Le membre valide le téléchargement. 
+
+Scénarios alternatifs
+6. a Le membre annule la raison du téléchargement ;
+1.	Le système annule le  téléchargement ;
+2.	 Retour à l’étape 2. 
+
+7. a Le système ne trouve aucune information  correspondant aux données sélectionnée ;
+3.	Le système affiche le message « Aucune information trouvée».
+4.	Retour à l’étape 2. 
+
+
+PAQ- UC14 : POSTER UNE ANNONCE PUBLICITAIRE
+Niveau	
+But de l'utilisateur 
+
+Acteurs principaux 
+Fermier
+
+Pré-conditions
+Être inscrit sur le site  « ProdAgriviQ ».
+Le Fermier est connecté au site « ProdAgriviQ ».
+
+Post-conditions
+Annonce du fermier enregistrée et affichée sur le site  « ProdAgriviQ ».
+
+Scénario principal
+1.	Le fermier  clique sur le lien poster une annonce; 
+2.	Le système affiche la page de saisi de l’annonce;
+3.	Le fermier  saisi les détails de l’annonce :
+-	Durée de publication souhaitée (jour)
+-	Contenu de l’annonce
+ et valide ; 
+4.	Le système vérifie que tous les champs obligatoires sont remplis et que les informations sont le format adéquat ;
+5.	le système enregistre l’annonce et la poste dans la barre de défilement des annonces  du site « ProdAgriviQ ».
+6.	 le système envoie au fermier un  courriel de confirmation du postage de l’annonce ;
+7.	le système affiche la page d’accueil personnelle du fermier.
+
+Scénarios alternatifs 
+3. a Le fermier annule la saisie des détails de l’annonce;
+1.	le système ignore la saisie et affiche la page d’accueil personnelle du fermier
+4. a Le fermier n’a pas rempli tous les champs obligatoires ;
+1.	le système affiche le message «Champ obligatoire non rempli » et affiche en couleur « Rouge » les champs non saisis.
+2.	Retour à l’étape 3
+
+PAQ- UC15 : AJOUTER DES COMMENTAIRES
+Niveau	
+But de l'utilisateur 
+
+Acteurs principaux 
+Internaute
+
+Pré-conditions
+L’internaute est sur la page d’informations détaillé sur un produit agricole 
+
+Post-conditions
+Commentaire enregistré et affiché sur le site  « ProdAgriviQ ».
+
+Scénario principal
+1.	L’internaute clique sur le lien ajouter un commentaire; 
+2.	Le système affiche la page de saisi du commentaire et les consignes à respecter sur la publication de commentaire;
+3.	L’internaute saisi le commentaire et son adresse e-mail ; 
+4.	Le système vérifie la validité de l’adresse courriel ;
+5.	 Le système enregistre et affiche le commentaire;
+6.	le système affiche la page d’informations détaillé du produit agricole commenté.
+
+Scénarios alternatifs 
+4. a L’internaute saisi une adresse courriel  invalide;
+1.	le système affiche le message «adresse courriel  invalide ».
+2.	Retour à l’étape 3
