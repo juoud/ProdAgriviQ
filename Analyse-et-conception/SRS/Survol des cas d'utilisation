@@ -1,0 +1,49 @@
+
+
+Cas d’utilisation
+Ce paragraphe présente de brève description des différents cas d’utilisation de ProdAgriviQ. La version élaborée se trouve aux annexes #1.
+
+PAQ-UC01 : Gérer les variétés de PA
+Le Fermier se sert de l’application ProdAgriviQ pour créer et mettre à jour les variétés de PA, les PA et toutes les données connexes.
+
+PAQ-UC02 : Gérer les récoltes de PA
+Le Fermier se sert de l’application pour créer et mettre à jour les données de récolte agricole d’une saison.
+
+PAQ-UC03 : Publier les PA
+Après avoir créé ou mis à jour ses PA,  le Fermier utilise ProdAgiviQ pour porter ses derniers à la connaissance du grand public à travers l’Internet. 
+
+PAQ-UC04 : Localiser un fermier
+L’Internaute procède à la localisation d’un fermier soit à la suite d’une recherche ou soit effectuer des achats.
+
+PAQ-UC05 : Ajouter des données audiovisuelles aux PA
+Pour chaque PA créé, le Fermier utilise l’application pour ajouter des images et vidéos pour compléter sa description. Ces données audiovisuelles peuvent être téléchargées depuis le disque local ou prise directement par la caméra du dispositif du fermier.
+
+PAQ-UC06 : Proposer la description d’un PA
+Un Membre partenaire se sert de l’application pour ajouter une nouvelle description ou modifier une description existante d’un PA. Cette description sera portée à la connaissance de tous les internautes pour validation.
+
+PAQ-UC07 : S’inscrire
+Un internaute Visiteur qui désire être un membre du site, se sert de ce cas d’utilisation. Une fois qu’il s’est inscrit, le membre a accès à plusieurs autres fonctionnalités selon qu’il est partenaire ou fermier. 
+
+PAQ-UC08 : Se connecter
+Ce cas d’utilisation à tout Membre du site de s’authentifier.
+
+PAQ-UC09 : Gérer son profile
+Le Membre reconnu du site se sert de ce cas d’utilisation pour ajouter ou apporter de modification sur ses informations personnelles ou professionnelles.
+
+PAQ-UC10 : Valider la fiche technique d’un PA
+Un Membre partenaire se sert de ProdAgriviQ pour compléter et valider l’exactitude des données d’un PA qui sont fournies par un fermier lors de la création du produit. 
+
+PAQ-UC11 : Rechercher des PA
+Le rôle de ce cas d’utilisation est de permettre à l’Internaute de rechercher un ou plusieurs PA soit en utilisant leur libellé (nom) ou soit en spécifiant des critères particuliers (multicritère). Si aucun libellé ou critère n’est fourni, la liste des 100 distincts PA sera retournée.
+
+PAQ-UC12 : Éditer des reporting
+L’Internaute membre demande à ProdAgriviQ de lui produire un état ou un rapport de données suivant un modèle prédéfinie. Ce rapport peut être une liste des produits agricoles ou bien des données de récolte d’une saison ou encore des données statistiques d’une période. Il peut être consulté à l’écran ou il peut être imprimé sur papier.
+
+PAQ-UC13 : Effectuer un téléchargement
+Le Membre procède au téléchargement des données de PA ou de récolte d’une période après avoir spécifié les raisons du téléchargement.
+
+PAQ-UC14 : Poster une annonce publicitaire
+Le Fermier utilise l’application pour mettre en ligne une annonce publicitaire à l’attention des internautes. L’annonce doit porter uniquement sur ses PA, ses récoltes ou ses activités agricoles. Il peut être un appel au don, la promotion des PA ou une invitation adressée aux internautes dans le cadre d’une vente au grand public.
+
+PAQ-UC15 : Ajouter des commentaires
+L’Internaute se sert de l’application pour exprimer son point de vue sur un PA, un fermier, des récoltes ou une activité agricole.
