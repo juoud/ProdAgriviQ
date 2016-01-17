@@ -1,0 +1,23 @@
+3. Les acteurs de ProdAgriviQ
+
+3.1. PAQ-AC01 : Internaute
+L’Internaute se sert de l’application pour exprimer son point de vue sur un PA, un fermier, des récoltes ou une activité.
+
+L’Internaute est la personne qui visite le site pour rechercher des PA, ajouter des commentaires sur les PA et localiser un fermier. Il s’agit bien sûr de l’acteur le plus important, celui pour lequel le site existe [3].
+
+3.2. PAQ-AC02 : Visiteur
+Le Visiteur est un inconnu du site web, mais qui peut néanmoins rechercher des PA, ajouter des commentaires et localiser un fermier. Un visiteur est un Internaute.
+
+3.3. PAQ-AC03 : Membre
+Le Membre est un Internaute dont le profile existe déjà autrement, il est déjà connu par le site web. Il peut éditer un reporting et effectuer de téléchargement des données textuelles et audiovisuelles de PA ou récolte de PA d’une période.
+
+3.4. PAQ-AC04 : Fermier
+C’est l’acteur phare du site web. Il est un Membre du site et s’en sert entre autre pour :
+-	Gérer les variétés de PA
+-	Publier les PA
+-	Ajouter des données audiovisuelles aux PA
+-	Gérer les récoltes de PA
+-	Poster une annonce publicitaire
+
+3.5. PAQ-AC05 : Partenaire
+Le Partenaire peut être un expert ou spécialiste du domaine agricole, un chercheur, un enseignant ou étudiant qui utilise le site pour proposer une description de PA ou valider la fiche technique d’un PA. Le Partenaire est lui aussi un Membre du site web.
