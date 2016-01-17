@@ -1,0 +1,173 @@
+4. Les exigences
+
+4.1.  Les exigences fonctionnelles
+PAQ-EF001 : CRÉER UN FERMIER
+ProdAgriviQ doit permettre la création d’un nouveau fermier lors de son inscription sur la plateforme. Le fermier doit utiliser une adresse courrielle valide pour son identification et fournir avec exactitude sa zone géographique. Un courriel de confirmation d’inscription est généré et envoyé à l’adresse indiquée. Ce courriel comprend le résumé des informations d’identification du fermier ainsi que le statu non activé. 
+
+PAQ-EF002 : ACTIVER UN FERMIER
+L’application doit offrir au fermier la possibilité d’accepter ou non l’ensemble de conditions d’utilisation de la plateforme. L’acceptation des conditions proposées permet d’activer automatiquement le fermier. La date d’activation du fermier est légèrement plus petite à celle de son inscription. Un courriel d’information est généré et envoyé dans la boite électronique du fermier. Cette caractéristique doit permettre un changement d’état de fermier. Ce changement d’état doit être historisé pour des fins de statistiques.
+
+PAQ-EF003 : SÉLECTIONNER LES INFORMATIONS ACCESSIBLES
+L’application doit permettre à un fermier activé d’indiquer les données qu’il souhaiterait mettre à la disposition du public.  
+
+PAQ-EF004 : CRÉER UNE VARIÉTÉ DE PA
+Cette caractéristique de ProdAgriviQ permettra  à un fermier activé de créer une variété de PA. Une variété de PA est une famille de PA ayant des caractéristiques semblables. 
+
+PAQ-EF005 : PAQ-EF005 : CRÉER UN PA
+Cette caractéristique permettra  à un fermier activé de créer un PA appartenant à une variété de PA. L’utilisateur doit indiquer le nom de PA et si possible le nom scientifique.
+  
+PAQ-EF006 : AJOUTER DES IMAGES DE PA	
+L’application doit permettre aux fermiers d’ajouter des images à chaque PA. Le fermier peut importer des images de PA depuis un disque ou bien les prendre directement en utilisant la caméra (webcam) intégrée à son appareil. 
+
+PAQ-EF007 : AJOUTER DES VIDÉOS DE PA 
+L’application doit permettre aux fermiers d’ajouter des vidéos à chaque PA. Le fermier peut importer des vidéos de PA depuis un disque ou bien les prendre directement en utilisant la caméra (webcam) intégrée à son appareil.
+
+PAQ-EF008 : SÉLECTIONNER L’IMAGE PRINCIPALE QUI REPRÉSENTE LE PA 
+L’application doit permettre aux fermiers de choisir parmi toutes les images d’un PA celle qui sera utilisée par défaut. L’image par défaut ou image principale d’un PA sera retournée dans toutes les recherches des internautes.
+
+PAQ-EF009 : ATTRIBUER UNE IMAGE À UNE VARIÉTÉ DE PA
+L’application doit permettre aux fermiers d’ajouter une image à une variété de PA.
+
+PAQ-EF010 : PUBLIER LES PA
+L’application doit permettre aux fermiers de publier leur PA. Cette caractéristique doit permettre un changement d’état de PA. Ce changement d’état doit être histoisé pour des fins de statistiques.
+
+PAQ-EF011 : AJOUTER LA DESCRIPTION DES PARCELLES
+L’application doit permettre aux fermiers d’ajouter la description de leurs parcelles cultivables. 
+
+PAQ-EF012 : AJOUTER LES DONNÉES DE RÉCOLTE
+Cette caractéristique doit permettre aux fermiers de fournir la quantité d’un PA récolté à une période donnée (saison) ainsi que la qualité de la récolte durant cette même période. Ces données seront utilisées pour des fins de statistiques.
+
+PAQ-EF013 : AJOUTER LA DESCRIPTION DES UNITÉS DE MESURE DE PA 
+Cette caractéristique doit permettre aux fermiers de fournir les différentes unités de mesure qu’ils utilisent pour mesurer la quantité et la qualité de leur PA.
+
+PAQ-EF014 : RECHERCHER UN PA
+La recherche permet de retrouver un PA avec son nom courant, local ou scientifique, ses images principales, ses différents producteurs et ses différentes unités de mesure.
+
+PAQ-EF015 : RECHERCHER UNE VARIÉTÉ DE PA 
+Cette caractéristique doit permettre de retrouver une VARIÉTÉ DE PA AVEC SES PA.
+
+PAQ-EF016 : RECHERCHER UN FERMIER
+Cette caractéristique doit permettre de retrouver un fermier avec ses PA et leur variété.
+
+PAQ-EF017 : MODIFIER LA DESCRIPTION D’UNE VARIÉTÉ DE PA
+L’application doit permettre aux fermiers ainsi qu’aux scientifiques de modifier la description d’une variété de PA notamment le nom, le code et l’image de la variété ainsi que la date de sa découverte. 
+
+PAQ-EF018 : MODIFIER LA DESCRIPTION D’UN PA
+L’application doit permettre aux fermiers ainsi qu’aux scientifiques de modifier la description d’un PA plus précisément son nom, son image de base, son unité de mesure et les parcelles. 
+
+PAQ-EF019 : ACTIVER LES DONNÉES ACCESSIBLES AU PUBLIC 
+L’application doit offrir au fermier la possibilité de choisir les données d’un PA qui seront mises à la disposition des internautes lors des téléchargements.
+
+PAQ-EF020 : MODIFIER LES INFORMATIONS DU FERMIER
+L’application doit permettre à un fermier de modifier ses informations personnelles comme son nom, ses photos et sa zone géographique. 
+
+PAQ-EF021 : AJOUTER UNE PHOTO DU FERMIER 
+Cette caractéristique doit permettre à un fermier de retrouver un fermier d’ajouter au plus une photo pour son identification.
+
+PAQ-EF022 : AFFICHER LES COORDONNÉES GÉOGRAPHIQUES DU FERMIER
+L’application doit pouvoir afficher les coordonnées géographiques d’un fermier lors d’une recherche de PA.
+
+PAQ-EF023 : DÉSACTIVER UN FERMIER
+Cette caractéristique doit permettre de désactiver un fermier sans aucune condition. Pour faire cette opération : (1) le fermier est créer et au bout d’une année, il ne s’est pas activé et (2) le fermier n’a ajouté aucun PA durant cette période. Le changement d’état doit être historisé pour des fins de statistiques. Un courriel est généré et envoyé dans sa boite à courriels.
+
+PAQ-EF024 : CHOISIR L’IMAGE D’UN PA
+Cette caractéristique doit permettre à un internaute de choisir l’image d’un PA.
+
+PAQ-EF025 : CHOISIR L’IMAGE D’UNE VARIÉTÉ DE PA
+Cette caractéristique doit permettre à un internaute de choisir l’image d’une variété de PA.
+
+PAQ-EF026 : AJOUTER LE NOM SCIENTIFIQUE D’UNE VARIÉTÉ DE PA 
+Cette caractéristique doit permettre à un scientifique ou un expert d’ajouter un nom et/ou un code à un PA. Cette opération sera historisée pour permettre aux internautes de choisir le nom le plus précis et le plus exact.
+
+PAQ-EF027 : AJOUTER LE NOM SCIENTIFIQUE D’UNE VARIÉTÉ DE PA
+Cette caractéristique doit permettre à un scientifique ou un expert d’ajouter un nom et/ou un code scientifique à un PA. Cette opération sera historisée pour permettre aux internautes de choisir le nom le plus précis et le plus exact.
+
+PAQ-EF028 : AJOUTER LES INFORMATIONS JUSTIFICATIVES DU NOM SCIENTIFIQUE
+Cette caractéristique doit permettre à un scientifique ou un expert d’ajouter une description détaillée pour justifier un nom et/ou un code qu’il a attribué à un PA. Cette description doit comporter entre autre, l’origine du nom scientifique, le nom de l’inventeur et la date de l’invention. 
+
+PAQ-EF029 : VALIDER LA FICHE TECHNIQUE D’UN PA
+ProdAgriviQ doit permettre à un scientifique ou un expert de valider l’exactitude de toutes les données figurant sur la fiche technique d’un PA. La validation doit être historisée.
+
+PAQ-EF030 : SÉLECTIONNER LA SAISON D’UNE ANNÉE
+ProdAgriviQ doit permettre aux utilisateurs de sélectionner les saisons agricoles d’une année. 
+
+PAQ-EF031 : SÉLECTIONNER UNE ZONE GÉOGRAPHIQUE DE LA PROVINCE
+ProdAgriviQ doit permettre aux utilisateurs de sélectionner les municipalités et les régions de la province.
+
+PAQ-EF032 : COCHER LES VARIÉTÉS DE PA 
+Cette caractéristique permettra aux utilisateurs de sélectionner les variétés de PA dans une archive. La description de ces variétés de PA sera par la suite affichée.
+
+PAQ-EF033 : COCHER LES PA
+Cette caractéristique permettra aux utilisateurs de sélectionner les PA d’une ou plusieurs variétés dans une archive. La description de ces PA sera par la suite affichée.
+
+PAQ-EF034 : SÉLECTIONNER LE TYPE DE REPORTING
+L’application doit permettre aux utilisateurs de choisir le type de représentation des données statistiques lors de l’édition des rapports et autres listing. 
+
+PAQ-EF035 : SÉLECTIONNER LE BUT DU TÉLÉCHARGEMENT
+Cette caractéristique permettra aux scientifiques, experts et étudiants de préciser le but du téléchargement des données liées aux PA. Les différentes raisons de téléchargement seront contenues dans une liste.
+
+PAQ-EF036 : ENTRER LE CODE DE VALIDATION DE LA DEMANDE DE TÉLÉCHARGEMENT
+Cette caractéristique permettra aux utilisateurs souhaitant effectuer des téléchargements d’entrer un texte alphanumérique de 5 caractères fourni par l’application. Une entrée erronée entrainera l’échec de téléchargement.
+
+PAQ-EF037 : SAUVEGARDER LES DONNÉES TÉLÉCHARGÉES 
+Cette caractéristique permettra aux utilisateurs de sauvegarder des données de ProdAgriviQ en local. 
+
+PAQ-EF038 : AJOUTER UN NOM LOCAL DU PA
+Cette caractéristique permettra aux internautes d’ajouter un nom local  à un PA. Ce nom local est différent du nom courant ainsi que du nom scientifique de PA. Cette opération est historisée.
+
+PAQ-EF039 : AJOUTER UN COMMENTAIRE
+Cette caractéristique permettra aux internautes d’ajouter un commentaire sur un PA publié. Cette opération est historisée.
+
+PAQ-EF040 : ENTRER LE CODE DE VALIDATION DES COMMENTAIRES
+Cette caractéristique permettra aux internautes d’entrer un texte alphanumérique de 5 caractères fourni par l’application pour valider leur commentaire. Une entrée erronée entrainera l’échec de la sauvegarde du commentaire.
+
+PAQ-EF041 : PUBLIER LE COMMENTAIRE
+ProdAgriviQ doit publier automatiquement tout commentaire valide. Un commentaire est valide s’il est accompagné d’un code de validation correct, fourni par l’application.
+
+PAQ-EF042 : AFFICHER LE NOM LOCAL PROBABLE D’UN PA
+ProdAgriviQ doit (1) calculer la fréquence des différents noms locaux attribués à chaque PA par les internautes et (2) afficher le nom local le plus fréquent.
+
+PAQ-EF043 : POSTER UNE ANNONCE PUBLICITAIRE
+Cette caractéristique permettra aux fermiers de faire la publicité des PA frais.  Dans cette publicité, les fermiers doivent mettre en avant la quantité de leur PA disponible en stock ainsi que la qualité de ces PA.
+
+PAQ-EF044 : RETIRER UNE ANNONCE PUBLICITAIRE
+Cette caractéristique permettra de retirer une publicité postée après un certain temps.
+
+4.2. Les exigences non fonctionnelles [2], [3] et [4]
+PAQ-ES01 : ERGONOMIE DE L’INTERFACE 
+•	La mise en page du site doit avoir une présentation claire et intuitive pour faciliter d’utilisation.
+
+PAQ-ES02 : PERFORMANCE
+•	ProdAgriQ doit permettre à un Fermier de pouvoir gérer plus de 1000 PA répartis en plusieurs variétés.
+
+•	ProdAgriQ doit permettre à un Fermier de pouvoir d’ajouter plus de 10 images et vidéos à chacun de ses PA.
+
+•	ProdAgriQ doit permettre  des connexions simultanées de 1000 Fermiers.
+
+PAQ-ES03 : PERSISTANCE DES DONNÉES DURANT LA CRÉATION ET LA MISE À JOUR 
+•	Les données sont sauvegardées durant l’opération de création ou de mise à jour des récoltes.
+
+PAQ-ES04 : USABILITY
+•	Facilité d’utilisation : Toutes les fonctions apparaissant dans les menus des différentes formulaires doivent avoir des équivalents clavier définis qui utilisent la touche ALT enfoncées en même temps qu’une autre touche.
+•	Learnability : Après une heure d’utilisation de l’application ProdAgriviQ, tout utilisateur devra être apte de réaliser les processus fonctionnels et les tâches qui lui sont autorisés et ceux sans apport externe
+•	Attractivity : L’interface de l’application ProdAgriviQ doit avoir des contrastes lui permettant de fonctionner dans un endroit ensoleillé. L’évaluation de cette exigence sera faite à base des critères suivants :
+o	Le fond de la fenêtre doit être de couleur vert foncé
+o	Le texte dans chaque fenêtre de ProdAgriviQ doit être lisible par l’utilisateur à 30 centimètres (cm) de son écran.
+
+PAQ-ES05 : MAINTENABILITY 
+•	Modifiabilité : Les appels de fonctions ne doivent pas être imbriqués à plus de 2 niveaux de profondeur.
+•	Analysability : Toutes les classes (de contrôleur, modèle, etc.) et méthodes, soit 100%, dans le code de ProdAgriviQ doivent être documentées
+•	Documentation technique : La documentation technique de ProdAgriviQ doit inclure un diagramme de classes.
+ 
+PAQ-ES06 : CONFORMITÉ
+•	ProdAgriQ doit fournir au fur à mesure le cumule des quantités de récoltes par unités de mesure.
+
+PAQ-ES07 : SÉCURITÉ 
+•	Le système doit verrouiller un compte utilisateur après quatre tentatives d'ouverture de session infructueuse consécutives dans un délai de cinq minutes.
+
+ 
+PAQ-ES08 : FIABILITÉ
+•	Tolérance aux fautes : En cas de perte de connexion, ProdAgriviQ doit afficher un message d’erreur pour informer l’internaute puis terminer son exécution.
+•	Maturité : ProdAgriviQ doit pouvoir fonctionner sana fautes pour 8 périodes dans une même journée. Chaque période peut variée entre 15 à 20 minutes consécutives.
+•	Recoverability : L’application Web ProdAgriviQ doit pouvoir redémarrer en moins de 10 secondes en cas de défaillance. Tout travail en cours doit être récupéré dans un intervalle de temps de 5 à 10 secondes. Ces temps seront vérifiés au moyen d’un test composé de 10 démarrages consécutifs de l’application.
+•	Robustesse : Tous les paramètres d'entrée doivent avoir des valeurs par défaut spécifiées, à utiliser si les données d'entrée sont manquantes ou non valides.
