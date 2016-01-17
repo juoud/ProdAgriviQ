@@ -1,0 +1,16 @@
+8. Interfaces 
+8.1. Interfaces Utilisateur
+Voir l’annexe A.
+8.2. Interfaces Matérielles
+Cette section ne s’applique pas dans le cadre du projet.
+
+8.3. Interfaces Logicielles 
+•	JDBC pour SQL Server : connexion à la base de données SQL. 
+•	JDBC pour PostgreSQL : connexion à la base de données SQL.
+•	jasypt-1.9.2 : pour encrypter les données (sécurité).
+•	joda-time-2.1 : pour la conversion et facilité l’emploi des dates en Java.
+•	jQuery : pour accroître l’interactivité. 
+•	jstl-1.2 : pour l’utilisation des objets java dans une page jsp.
+
+8.4. Interfaces de Communications
+	Le protocole Http.
