@@ -11,7 +11,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
-        <url-pattern>/faces/*</url-pattern>
+        <url-pattern>*.xhtml</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
@@ -19,6 +19,55 @@
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>faces/index.xhtml</welcome-file>
+        <welcome-file>/index.xhtml</welcome-file>
     </welcome-file-list>
+    <context-param>
+        <param-name>javax.faces.INTERPRET_EMPTY_STRING_SUBMITTED_VALUES_AS_NULL</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <!--login-config>
+        <auth-method>FORM</auth-method>
+        <form-login-config>
+            <form-login-page>/pageAuthentification.xhtml</form-login-page>
+            <form-error-page>/pageError.xhtml</form-error-page>
+        </form-login-config>
+    </login-config>
+    <error-page>
+        <exception-type>
+            
+        </exception-type>
+        <location>/resources/pageAccesRefuse.xhtml</location>
+    </error-page>
+    <security-constraint>
+        <display-name>ViewAndEdit</display-name>
+        <web-resource-collection>
+            <web-resource-name>ViewableAndEditable</web-resource-name>
+            <description/>
+            <url-pattern>*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>administrateur</role-name>
+            <role-name>fermier</role-name>
+            <role-name>partenaire</role-name>
+            <role-name>etudiant</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-role>
+        <description/>
+        <role-name>administrateur</role-name>
+    </security-role>    
+    <security-role>
+        <description/>
+        <role-name>fermier</role-name>
+    </security-role>
+    <security-role>
+        <description/>
+        <role-name>
+            partenaire
+        </role-name>
+    </security-role>
+    <security-role>
+        <description/>
+        <role-name>etudiant</role-name>
+    </security-role-->
 </web-app>

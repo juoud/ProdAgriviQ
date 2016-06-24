@@ -1,14 +1,90 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
     <h:head>
-        <title>Facelet Title</title>
+        <title>Page d'accueil...</title>
+        <h:outputStylesheet library="default" name="css/default.css"/>
+        
     </h:head>
     <h:body>
-        Hello from Facelets
-        <br />
-        <h:link outcome="welcomePrimefaces" value="Primefaces welcome page" />
+        <div id="container">
+            <header>
+                <div id="headerCommandeMenu">
+                    <h:form>
+                        <h:panelGrid columns="6" columnClasses="rightAlign1, leftAlign1">
+                            <h:commandLink id="aaccueil" action="index"><h:graphicImage library="default" name="images/Accueil.png" value="Page accueil" width="48px" height="40px" /></h:commandLink>
+                            <h:outputLabel id="aaccueil1" value="---------- ----------" styleClass="headerOutputLabel"></h:outputLabel>
+                            <h:outputLabel id="aaccueil2" value="---------- ----------" styleClass="headerOutputLabel"></h:outputLabel>
+                            <h:outputLabel id="aaccueil3" value="---------- ----------" styleClass="headerOutputLabel"></h:outputLabel>
+                            
+                            <h:commandButton id="sconnexion" class="boutonh" action="pageAuthentification" value="Se connecter" />
+                            <h:commandButton id="sinscription" class="boutonh" action="pageInscriptionProfilesPossibles" value="S'inscrire" />
+                            
+                        <!--span id="sdeconnexion" class="bouton"><a id="adeconnexion" href="">Quitter</a></span-->
+                        </h:panelGrid>
+                    </h:form>    
+                </div>
+
+
+                <div id="divRechercher">
+                    <h:form>
+                        <h:panelGrid columns="3" columnClasses="rightAlign1, leftAlign1">
+                            <h:outputLabel for="chaineRecherchee" value="Texte :"></h:outputLabel>
+                            <h:inputText id="chaineRecherchee" label="Texte">
+                                <f:validateLength minimum="1" maximum="100"/>
+                            </h:inputText>
+                            
+                            <h:panelGroup>
+                                <h:commandButton id="RechercherBouton"  value="Rechercher" styleClass="bouton, rechercheBouton"/><br/>
+                                <h:commandLink id="aRechercheAvancee" value="Recherche avancée"/>
+                            </h:panelGroup>
+                        </h:panelGrid>
+                    </h:form>
+                </div>
+            </header>
+
+            <nav>
+                
+            </nav>
+            
+            <div id="main">
+                <h:panelGrid id="panelBienvenue" columns="2" columnClasses="rightAlign3, leftAlign3">
+                    <h:graphicImage library="default" name="images/prodagriviQ.png" value="ProdAgriviQ" width="199px" height="175px" style="align-content: center; border-style: none;"/>
+                    <h:form>
+                        <h2 id="h2Bienvenue">Bienvenue sur le site de <br/> <br/> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; valorisation des </h2>                    
+                        <h1 id="h1UA">&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Produits agricoles</h1>
+                        <h2 id="h2Bienvenue_">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; du Québec &nbsp;</h2>
+                    </h:form>
+                </h:panelGrid>
+                <hr size="5" />
+                <p id="pBienvenue">
+                    
+                </p>
+                
+                
+                <div id="dernProdAgriPublies">
+                    
+                    <h2>Produits agricoles récemment publiés</h2>
+                    
+                </div>
+                
+            </div>
+            
+            <aside>
+
+            </aside>
+            
+            <footer>
+                <p>
+                    Copyright &copy; 2016, <a href="mail:juoud1@gmail.com"><abbr title="Association Indivala et Fondation Dongongo, baba ti Indivala">&diams; &diams; &diams; AIFonDobatI  &diams; &diams; &diams;</abbr></a>, GNU Licence
+                </p>
+            </footer>
+        </div>
     </h:body>
 </html>
 

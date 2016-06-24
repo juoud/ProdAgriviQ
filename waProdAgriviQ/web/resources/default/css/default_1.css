@@ -1,0 +1,805 @@
+body, div, nav, header, hgroup, button, label, img, h1, h2, h3,form, aside, footer, fieldset, span, a{
+    margin:0;
+    padding:0;
+}
+
+aside, footer, header, hgroup, nav, div{
+    display:block;
+    box-sizing:border-box;
+}
+
+body {
+    width:100%;
+    background-color: #F8F8F8;/*hsl(252, 95%, 95%);*/
+    font-family: Cambria, 'Times New Roman', serif;
+    color:green /*#0068AC*/;
+    box-sizing:border-box;
+}
+
+header {
+    height: 51.5px;
+    background-image: url('../images/prodagriviQh.png');
+    background-repeat: no-repeat;
+    /*background-color:#287e34;*/
+    margin-top: .5px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    min-width: 800px;
+    box-sizing: border-box;
+    border-color: olive;
+    min-width:85.25em;
+    box-sizing:border-box;
+}
+
+label{
+    clear:both;
+    display:block;
+    float:left;
+    width:11.7em;
+    padding:7px;
+}
+
+p#pBienvenue{
+    font-family: Tahoma;
+    font-size: 14pt;
+    color: blue;
+    text-align: justify;   
+}
+
+p#pBienvenue em{
+    font-weight: bold;
+}
+
+#headerText{
+    position:absolute;
+    top:25px;
+    left:132px; 
+    /*width:100%;*/
+    margin-top:10px;
+}
+
+/*h1{
+    font-family:Impact;
+    font-size:32pt;
+    text-align:center;
+    color:green;
+    background-color:orange;
+    width:12em;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0.02em;
+    margin-bottom:.15em;
+    padding:.05em;
+    border:double;
+    border-radius:3px;
+}*/
+
+h2{
+    display:block;
+    font-size:24px;
+    line-height:21.5px;
+    color:hsl(24, 100%, 50%);
+}
+
+
+h3{
+    display:block;
+    font-size:18px;
+    line-height:18px;
+    font-weight: bold;
+    color: navy;
+}
+
+img{
+    background:none repeat scroll 0 0 #F8F8F8;
+    border:outset;
+}
+
+nav{
+    position:relative;
+    /*background-color: tomato;*/
+    float:left;
+    width:15em/*19%*/;
+    min-width:15em;
+    padding-top:4em;
+    padding-left:10px;
+    margin-top:15px;
+    margin-left: 10em;
+    
+}
+
+nav a#aaccueil{
+     margin-top:3em;
+}
+
+#main{
+    position:relative;
+    
+    margin-top:5px;
+    /*margin-left: 19em;*/
+    padding:7px;
+    float:left;
+    width:50.25em/*60%*/;
+    border:outset;
+}
+
+.table{
+    width: 95%;
+}
+
+.oddRows, .evenRows, .headerDT{
+    text-align: left;
+    width: 20%;
+    color: steelblue;
+}
+
+.headerDT{
+    text-align: left;
+    width: 20%;
+    background-color: blanchedalmond;
+}
+
+.colonne1{
+    text-align: left;
+    width: 1%;
+}
+
+
+aside{
+    position:relative;
+    
+    float:left;
+    width: 15em/*19%*/;
+    min-width:15em;
+    padding-left:10px;
+}
+
+nav, #main, footer{
+    box-sizing:border-box;
+}
+
+footer{
+    position:relative;
+    clear:both;
+    width:auto/*136.5em100%*/;
+    height:25px;
+    font-size:10px;
+    text-align:center;
+    color:hsl(150, 50%, 90%);
+    background-color:hsl(0, 0%, 50%);
+    box-sizing:border-box;
+    min-width:85.2em;
+    padding-top:0.05em;
+}
+
+#container{
+    display:block;
+    margin-top:0px;    
+    min-width:85.25em;
+    box-sizing:border-box;
+    
+}
+
+/*Formatage des zones de texte*/
+input,  select, textarea {
+    width:15.75em/*px*/;
+    height:1.4em/*px*/;
+    text-align:left;
+    padding:1px;
+    border:inset;
+}
+
+.input {
+    width:18.75em/*px*/;
+    height:1.4em/*px*/;
+    padding:1px;
+    margin-top: 0;
+    border:inset;
+    border-radius: 5px;
+}
+
+.output{
+    margin-bottom: 0;
+}
+
+.inputAuthentification, .inputTel {
+    width:10.75em/*px*/;
+    height:1.4em/*px*/;
+    padding:1px;
+    border:inset;
+    border-radius: 5px;
+} 
+
+
+.leftAlign {
+    width:15.75em/*px*/;
+    height:1.8em/*px*/;
+}
+
+.rightAlign{
+    width:20.75em/*px*/;
+    height:1.8em/*px*/;
+}
+
+.leftAlign3 {
+   /* width:25.75em px*/;
+    
+}
+
+.rightAlign3{
+   /* width:10.75em px*/;    
+}
+
+.leftAlign2 {
+    width:15.75em/*px*/;
+    
+}
+
+.rightAlign2{
+    width:20.75em/*px*/;    
+}
+
+.selectList{
+    font-size: 17px;
+    border: inset;
+    height:2.1em;
+    width:12.75em/*px*/;
+    border:inset;
+    border-radius: 5px;
+}
+
+/*Règles de formatage des boutons*/
+button, #sinscription, #sconnexion, #sdeconnexion{
+    height:9%/*px*/;
+    border:outset;
+    padding:4px;
+    text-align:center;
+    border-radius:10px;
+}
+
+.bouton{   
+    height:2em/*px*/;
+    border:outset;
+    padding:4px;
+    text-align:center;
+    border-radius:10px;
+    background-color:olive;
+    width:7.5em/*px*/;
+    border-color:green;/*hsl(119, 90%, 24%);*/
+    color:lightyellow;
+    margin-left:24%;
+}
+
+.boutonAjout{   
+    height:2.7em/*px*/;
+    font-size: 10pt;
+    border:outset;
+    padding:1px;
+    text-align:center;
+    border-radius:10px;
+    background-color:royalblue;
+    width:7.9em/*px*/;
+    border-color:darkblue;/*hsl(119, 90%, 24%);*/
+    color:whitesmoke;
+    margin-left:0.9em;
+}
+
+.boutonEnregistrer{   
+    height:2em/*px*/;
+    border:outset;
+    padding:4px;
+    text-align:center;
+    border-radius:10px;
+    background-color:olive;
+    width:7.5em/*px*/;
+    border-color:green;/*hsl(119, 90%, 24%);*/
+    color:lightyellow;
+    margin-left:1em;
+}
+
+.boutonAnnuler{   
+    height:2em/*px*/;
+    border:outset;
+    padding:4px;
+    text-align:center;
+    border-radius:10px;
+    background-color:darkblue;
+    width:7.5em/*px*/;
+    border-color:lavender;/*hsl(119, 90%, 24%);*/
+    color:snow;
+    margin-left:1.5em;
+}
+
+.boutonh{   
+    height:2em/*px*/;
+    border:outset;
+    padding:4px;
+    text-align:center;
+    border-radius:10px;
+    background-color:goldenrod/*darkseagreen*/;
+    width:6.85em/*px*/;
+    border-color:orange/* khaki darkturquoise*/;/*hsl(119, 90%, 24%);*/
+    color:white /*lightgoldenrodyellow*/;
+    margin-left:24%;
+}
+
+.boutonChoixProfil{   
+    height:2em/*px*/;
+    border:outset;
+    padding:4px;
+    text-align:center;
+    border-radius:10px;
+    background-color:olive/*darkseagreen*/;
+    width:8.85em/*px*/;
+    border-color:green/*darkturquoise*/;/*hsl(119, 90%, 24%);*/
+    color:lightyellow/*lightgoldenrodyellow*/;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.bouton1{   
+    height:2em/*px*/;
+    border:outset;
+    padding:4px;
+    text-align:center;
+    border-radius:10px;
+    background-color:navy;
+    width:11.5em/*px*/;
+    border-color:darkblue;/*hsl(119, 90%, 24%);*/
+    color:lightgrey;
+    margin-left:24%;
+}
+
+.bouton2{   
+    height:1em/*px*/;
+    border:outset;
+    padding:4px;
+    text-align:center;
+    border-radius:10px;
+    background-color:white;
+    width:1em/*px*/;
+    border-color:darkblue;/*hsl(119, 90%, 24%);*/
+    color:lightgrey;
+    margin-left:24%;
+}
+
+
+.rechercheBouton:hover,.bouton:hover,  .bouton1:hover, .boutonreset:hover{
+    background-color:hsl(0, 2%, 17%);
+    border-color: hsl(0, 9%, 80%);
+    color: hsl(0, 9%, 80%);
+}
+
+.boutonh:hover, .boutonAjout:hover, .boutonChoixProfil:hover{
+    background-color:hsl(0, 2%, 17%);
+    border-color: darkslategray;
+    color: khaki;
+}
+
+/*Forme d'un bouton lorsqu'on clique dessus*/
+.boutonAjout:active, .bouton1:active{
+    border:inset;
+    border-width:thick;
+    border-color: hsl(250, 50%, 50%);
+    background-color:hsl(250, 50%, 50%);
+}
+
+.rechercheBouton:active,.bouton:active,  .boutonh:active, .boutonChoixProfil:active{
+    border:inset;
+    border-width:thick;
+    color:hsl(0, 2%, 17%);
+    border-color: hsl(0, 9%, 80%);
+    background-color:hsl(0, 9%, 80%);
+}
+
+
+/*Règles de formatage communes aux boutons et zones de texte*/
+input, .bouton1, label, select, textarea{
+    font-family:Arial;
+    font-size:14.75pt;
+    border-width:thick;
+    border-color:hsl(250, 100%, 100%);
+    margin: 1px;
+}
+
+#motdepasse {
+    width:20%;
+}
+
+#confirmation {
+    width:20%;
+}
+
+/*Règles de formatage de la zone de texte Resultat indiquant qu'elle est seulement en lecture seule*/
+/*#txtResult{*/
+[readonly]{
+    background-color:hsl(255, 50%, 80%);
+}
+
+/*Règles de formatage de la classe cClear*/
+.cClear{
+    color:hsl(250, 100%, 100%);
+    background-color:hsl(0, 100%, 50%);
+    font-weight:bold;
+}
+
+.cClear:hover{
+    background-color:hsl(24, 100%, 50%);
+}
+
+/*--------------Styles de validation visuelle des entrées utilisateurs ------------------*/
+/*:valid{
+    border:solid lime;
+    font:normal;
+}*/
+
+:invalid{
+    border: solid red;
+    font-weight: bold;
+}
+
+:required{
+    background-color:lightyellow;
+}
+
+/*:optional{
+    background-color:lightgray;
+}*/
+
+/*------------------Formattage des boutons contenus dans les formulaires----------------------------*/
+form input{
+    vertical-align:top;
+}
+
+form button{
+    vertical-align:top;
+}
+
+form textarea{
+    vertical-align:top;
+}
+
+form hr{
+    vertical-align:top;
+    margin:7px;
+}
+
+
+
+
+/*==============================================================================================================================================
+    Boutons de la barre de menus horizontale
+    =======================================================================
+*/
+header #headerCommandeMenu{
+    position:absolute;
+    top:.5px;
+    left:161.5px; 
+    width:71.25em;
+    height:55px;
+    margin-top:.1px;
+    padding:3px;
+    border: 0.1em green solid;
+    display:block;
+    background-color:darkgreen;
+
+    box-sizing:border-box;
+}
+
+header #headerCommandeMenu .headerOutputLabel{
+    color :darkgreen;
+
+}
+
+						
+header #headerCommandeMenu #sdeconnexion{	
+    position:relative;
+    top: -1em;
+	/*top: 1em;
+	left:73.5em;*/
+    background-color:hsl(205, 100%, 50%);
+	width: 6.7em;
+    margin-left:86.5%;
+	border-radius :10px;
+	z-index: 11500;
+}
+						
+			
+header #headerCommandeMenu #sinscription:HOVER {
+		background-color: darkgray;
+		color:yellow ;
+		border: 0.1em yellow solid;
+		z-index: 11500;
+}
+			
+
+			
+header #headerCommandeMenu #sconnexion:HOVER {
+		background-color: darkgray;
+		color:yellow ;
+		border: 0.1em yellow solid;
+		z-index: 11500;
+}
+			
+header #headerCommandeMenu #sdeconnexion:HOVER {
+		background-color: darkgray;
+		color:red ;
+		border: 0.1em red solid;
+		z-index: 11500;
+}
+			
+div#divRechercher form {
+	position: absolute;
+	top:3.5em;
+	width:45em;
+	margin:auto;
+	padding:0.2em;
+	margin-left:21em;
+	background-color:#fffddd;
+	border: 0.1em green solid;
+	display: block;
+	overflow:auto;
+	border-radius :10px;
+	z-index: 1001;
+}
+					
+div#divRechercher form fieldset {
+	position: relative;
+	padding:0.12%;
+	margin: auto;
+	border: 0.1% #0568CD solid;
+	width:99%;
+	display: block;
+	overflow: no-display;
+	border-radius :10px;
+	z-index: 1002;
+}
+						
+div#divRechercher form fieldset legend {
+	font-size:16pt;
+	font-weight: bold;
+	color: navy;
+	width: 35%;
+	padding:0.15%;
+				
+	/*background-color: #cccfff;*/
+}
+		
+div#divRechercher form fieldset p#pannonce {
+	font-size:14.5pt;
+	font-weight: bold;
+	padding:0.4%;
+	color: blue;
+	margin-left:auto;
+	margin-right:auto;
+}
+			
+#motbienvenue p#info {
+	font-style:italic;
+	color: #E8A22B;
+}
+			
+div#divRechercher form fieldset label{
+	font-size:13pt;
+	float: left;
+	width: 28%;
+	padding:0.5%;
+	margin: 0% 0% 0% 0%;
+	margin-left:0.5%;
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+				
+}
+						
+div#divRechercher form fieldset input{
+	/*clear:left;*/
+	font-size:13pt;
+	width:49.75%;
+	padding:0.5%;
+	border: 0.1% #999 solid;
+	margin: 0% 0% 0% 0%;
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+	border-radius :3px;
+	z-index: 1003;
+}
+												
+.rechercheBouton{
+	
+    font-size:12pt;
+    font-weight:normal;
+    height: 75%;
+    width:95.5%;
+    margin-left:.4%;
+    margin-top: 5.5%;
+    
+    border:outset;
+    
+    text-align:center;
+    border-radius:10px;
+    background-color:olive;
+    
+    border-color:green;/*hsl(119, 90%, 24%);*/
+    color:lightyellow;
+    z-index: 1007;		
+}
+			
+div#divRechercher form fieldset a#aRechercheAvancee {
+	position:relative;
+	margin-left:82%;
+	margin-bottom:.25%;
+	margin-top:.5%;
+	font-size: 11pt;
+}
+			
+			
+span.requis{
+		color: #c00;
+		margin: 0% 0% 0% 0%;
+}
+			
+/*div#divRechercher form fieldset span.erreur, aside#id2 form fieldset p.erreur{
+	font-family:"tunga";
+	font-size:12pt;
+		color: #900;
+				 
+}*/
+			
+span.erreur{
+	font-size:10.5pt;
+				 
+}
+			
+p.erreur{
+	font-family:"tunga";
+	font-size:15pt;
+	font-weight:bold;
+	text-align:center;
+	color: #900;
+}
+			
+p.succes{
+	font-family:"tunga";
+	font-size:15pt;
+	font-weight:bold;
+	text-align:center;
+	color: green;
+}	
+			
+div#divRechercher form fieldset p#pinfo{
+	margin-left: auto;
+	margin-right: auto;
+	font-size:13.5pt;
+	font-weight: bold;
+	color: fff;
+}
+
+/*==============================================================================================================================================
+    La boîte main
+    =======================================================================
+*/		
+#main h1#h1UA{
+    font-family:Impact;
+    font-size:30pt;
+    text-align:center;
+    color:green;
+    /*background-color:orange;*/
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    /*margin-top:0.02em;*/
+    margin-bottom:.15em;
+    /*padding:.02em;*/
+    /*border:double;*/
+    border-radius:3px;
+}
+#main h2{
+    font-size:15pt;
+    font-weight: bold;
+    display:block;
+    /*background-color:hsl(252, 90%, 90%);*/
+    text-align:center;
+    padding:0.25em;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0;
+    border-radius :2.5px;
+}
+
+#main h2#h2Bienvenue{
+    font-size:22pt;
+    font-family:Impact;
+    color:darkorange;
+    font-weight: bold;
+    text-align:left;
+}
+
+#main h2#h2Bienvenue_{
+    font-size:22pt;
+    font-family:Impact;
+    color:midnightblue;
+    font-weight: bold;
+    text-align:center;
+}
+
+#main #divimagepcple{
+	float:left;
+	font-size:13.5pt;
+	font-weight: bold;
+	width:60%;
+    padding:1.5em;
+    box-sizing:border-box;
+}
+
+
+
+#main #divimagepcple img{
+	margin-left:auto;
+    margin-right:auto;
+}
+
+#main #divmotbienvenue{
+	float:left;
+	font-size:14pt;
+    margin:1px;
+    padding:1px;
+	width:37%;
+    box-sizing:border-box;
+}
+#main #divmotbienvenue p{
+    text-align:justify;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:3em;
+	display:block;
+}
+
+#main .divmain{
+	/*display:inline-block;*/
+    color:navy/*#0068AC*/;
+}
+
+#main #dernProdAgriPublies{
+    height: 25em;
+}
+#main #dernProdAgriPublies h2{
+    background-color: coral;
+    color: whitesmoke;
+    font-size: 18pt;
+    font-weight: bold;
+    height: .8em;
+}
+/*==============================================================================================================================================
+    La boîte aside
+    =======================================================================
+*/		
+aside h2{
+    font-size:25pt;
+    display:block;
+    
+    text-align:center;
+    padding:1.25em;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:1em;
+    border-radius :15px;
+}
+/*==============================================================================================================================================
+    NAV
+    =======================================================================
+*/
+.liens{
+    font-family: Tunga;
+    font-size: 15pt;
+    margin-left: 1em;
+    margin-top:  0.15em;
+    margin-bottom: 0.2em;
+}
+
+/*==============================================================================================================================================
+    Messages d'erreur
+    =======================================================================
+*/
+.erreur{
+    color: red;
+}
